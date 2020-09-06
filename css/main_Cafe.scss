@@ -188,7 +188,6 @@ a {
 
 header {
   padding: 27px 0;
-
   .nav {
     display: flex;
     justify-content: space-between;
@@ -258,6 +257,7 @@ header {
     display: flex;
     justify-content: flex-end;
     margin-bottom: 145px;
+    position: relative;
     @include max-screen(578px) {
       margin-bottom: 40px;
     }
@@ -304,6 +304,24 @@ header {
           @include max-screen(578px) {
             border-top: 2px solid $c-white;
           }
+        }
+      }
+    }
+    .Scroll_Down{
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      transform-origin: left top;
+      transform: rotate(-90deg);
+      @include max-screen(578px){
+        display: none;
+      }
+      a{
+        font-size: 0.75rem;
+        color: $c-input;
+        i{
+          color: $c-input;
+          margin-right: 12px;
         }
       }
     }

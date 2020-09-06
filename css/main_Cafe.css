@@ -170,7 +170,8 @@ header {
   header .section_content {
     display: flex;
     justify-content: flex-end;
-    margin-bottom: 145px; }
+    margin-bottom: 145px;
+    position: relative; }
     @media screen and (max-width: 578px) {
       header .section_content {
         margin-bottom: 40px; } }
@@ -209,6 +210,21 @@ header {
         @media screen and (max-width: 578px) {
           header .section_content .content .content_contact .orange_block {
             border-top: 2px solid #fff; } }
+    header .section_content .Scroll_Down {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      transform-origin: left top;
+      transform: rotate(-90deg); }
+      @media screen and (max-width: 578px) {
+        header .section_content .Scroll_Down {
+          display: none; } }
+      header .section_content .Scroll_Down a {
+        font-size: 0.75rem;
+        color: #919eb1; }
+        header .section_content .Scroll_Down a i {
+          color: #919eb1;
+          margin-right: 12px; }
   header .section_Our’s_Company {
     display: flex; }
     @media screen and (max-width: 992px) {
